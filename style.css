@@ -1,0 +1,56 @@
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: #f7f7f7;
+  cursor: default
+}
+
+footer {
+  border-top: 1px solid black;
+}
+header {
+  background-color: #ededed
+}
+
+.container {  margin-bottom: 3rem; }
+
+
+h1 { margin-bottom: 4rem; }
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+li {
+  cursor: pointer;
+  display: inline;
+  padding-right: 1.5rem;
+}
+li:hover { text-decoration: underline black; }
+
+.separator-line {
+  text-align: center;
+  border-top: 1px solid black;
+  margin-bottom: 5rem;
+}
+
+.rounded-xl { border-radius: 7% }
+
+.avatar {
+  border-radius: 50%;
+  border: 0.2rem solid lightgray
+}
+.social-media-icon { width: 1rem; }
+
+.hobby {
+ margin-bottom: 2rem;
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
