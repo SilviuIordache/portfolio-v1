@@ -1,133 +1,80 @@
 
 <!DOCTYPE html>
-<html class="h-100">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Silviu Iordache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultra</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>SilviuIordache</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="h-100 d-flex flex-column">
-
-    <header class="d-flex justify-content-between align-items-center py-3">
-      <div class="d-flex align-items-center ml-4">
-        <div>
-          <h4 class="mb-0">Silviu Iordache</h4>
-          <p class="mb-0 text-muted">Web Developer</p>
-        </div>
-      </div>
-      <ul class="mr-4"> 
-        <li>ABOUT</li>
-        <li>PORTOFOLIO</li>
-        <li>CONTACT</li>
-      </ul>
+  <body>
+    <header>
+      <a href="">Home</a>
+      <h4>Silviu Iordache - Web Developer</h4>
+      <nav>
+        <ul> 
+          <li><a href="#website">Website</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="container mt-4">
-      <div class="row justify-content-center">
-        <h1>About Me</h1>
-      </div>
-      <div class="row">
-        <div class="col-8"> 
-          <p>My name is Silviu Iordache, I was born in Craiova, Romania in 1992.</p>
-          <p>My professional career started in the video game industry, where I worked for almost 6 years as a game designer and content & level creator</p>
+    <section id="website">
+      <h1>Website</h1>
+        <p>This website is built with just native HTML and CSS, without andy JavaScript or the use of any external libraries like Bootstrap. This is an example of what's possible when using just the primary tools of the web platform in order to build a webpage.</p>
+    </section>
 
-          <p>In 2018, I decided to quit my career in the video game industry and pursue something new. The road led me to web development. For the past year I've been learning web programming and I got hired as a full-stack web programmer at Caphyon, in Craiova.</p>
-        </div>
-        <div class="col-4 d-flex align-items-center">
-          <img class="rounded-xl shadow" src="./media/me.jpg" width="100%" >
-        </div>
-      </div>
-    </main>
+    <section id="about">
+      <h1>About</h1>
+        <p>My name is Silviu Iordache, I was born in Craiova, Romania in 1992.</p>
+        <p>My professional career started in the video game industry, where I worked for almost 6 years as a game designer and content & level creator</p>
+        <p>At the end of 2018, I decided to quit my career in the video game industry and pursue something new. The road led me to web development. For the past year I've been learning web programming and I got hired as a full-stack web programmer at Caphyon, in Craiova.</p>
+    </section>
   
-    <section id="hobbies-section" class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-6">
-          <div class="separator-line"></div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <h1>Hobbies</h1>
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-4">
-          <div class="hobby text-center">
-            <p class="emoji">🏋️</p>
-            <p>Fitness</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="hobby text-center">
-            <p class="emoji">🚴</p>
-            <p>Cycling</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="hobby text-center">
-            <p class="emoji">📖</p>
-            <p>Reading</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="hobby text-center">
-            <p class="emoji">⛰️</p>
-            <p>Nature</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="hobby text-center">
-            <p class="emoji">🧘</p>
-            <p>Wellness</p>
-          </div>
-        </div>
-        <div class="col-6 col-md-4">
-          <div class="hobby text-center">
-            <p class="emoji">🖥️</p>
-            <p>Programming</p>
-          </div>
-        </div>
-        
-      
-      </div>
+    <section id="hobbies">
+      <h1>Hobbies</h1>
+      <p> This is a list of activities I enjoy doing:</p>
+      <p>🏋️ Fitness</p>
+      <p>🚴 Cycling</p>
+      <p>📖 Reading</p>
+      <p>⛰️ Hiking</p>
+      <p>🧘 Wellness</p>
+      <p>🖥️ Programming</p>
+    </section>
+    
+
+    <section id="projects">
+      <h1>Projects</h1>
+        <a id="project-brt" href="https://www.bytesroute.com"> Bytes Route  </a>
+        <a id="project-pizza"> Bike Store</a>
+        <a id="project-simon"> Simon Says</a>
+        <a id="project-painter"> Painter</a>
     </section>
 
-    <section id="projects-section" class="container">
-      <div class="row justify-content-center">
-        <h1>Projects</h1>
-      </div>
-
-      <div class="row">
-        
-      </div>
+    <section id="contact">
+      <h1>Contact</h1>
+      <address>
+        <a href="mailto:silviu.iordache92@gmail.com">silviu.iordache92@gmail.com</a><br>
+        <a href="tel:+400753537674">+40 0753537674 </a>
+        <a href="https://www.facebook.com/silviu.iordache.5">
+          <img src="./media/facebook.svg" class="social-media-icon">
+        </a>
+        <a href="https://github.com/SilviuIordache">            
+          <img src="./media/github.svg" class="social-media-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/silviu-iordache-36b81785/">            
+          <img src="./media/linkedin.svg" class="social-media-icon">
+        </a>
+      </address>
     </section>
 
-
-    <footer class="container mt-auto pt-3 px-0 mb-4 d-flex justify-content-between">
-      <div class="">Silviu Iordache © 2020</div>
-      <ul class="">
-        <li>
-          <a href="https://www.facebook.com/silviu.iordache.5">
-            <img src="./media/facebook.svg" class="social-media-icon">
-          </a>
-        </li>
-        <li>
-          <a href="">            
-            <img src="./media/github.svg" class="social-media-icon">
-          </a>
-        </li>
-        <li>
-          <a href="">            
-            <img src="./media/linkedin.svg" class="social-media-icon">
-          </a>
-        </li>
-        <li>
-          <a href="">            
-            <img src="./media/twitter.svg" class="social-media-icon">
-          </a>
-        </li>
-      </ul>
+    <footer>
+      <p>Silviu Iordache © 2020</p>
     </footer>
+
   </body>
 </html>
