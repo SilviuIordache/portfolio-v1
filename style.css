@@ -4,55 +4,37 @@ html {
 
 body {
   background-color: #f7f7f7;
-
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
+/* ----- HEADER ------ */
 header {
-  background-color: #ededed
+  background-color: #ededed;
+  display: flex;
+  justify-content: space-between;
 }
 
-ul {
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-li {
+.nav-list > li {
   cursor: pointer;
   display: inline;
   padding-right: 1.5rem;
 }
-li:hover { text-decoration: underline black; }
-
+.nav-list > li:hover { text-decoration: underline black; }
 
 
 
 /* ------ HOBBIES ----- */
-.hobby {
- margin-bottom: 2rem;
-}
-
-.emoji {
-  font-size: 2rem;
-  margin-bottom: 0;
+.hobbies-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-items: left;
 }
 
 
 /* ------ PROJECTS ----- */
-.project-card {
-  height: 100%;
-  width: 100%;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
 #project-brt {
   color: white;
   background-color: #ceb3f2
@@ -73,16 +55,30 @@ li:hover { text-decoration: underline black; }
   background-color: #faf7ac;
 }
 
+
 /* ----- CONTACT -------- */
 .social-media-icon { 
   width: 1rem;
 }
+
 
 /* ----- FOOTER  ------ */
 footer {
   border-top: 1px solid black;
   width: 100%;
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+address > a {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .separator-line {
