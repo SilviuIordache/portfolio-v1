@@ -1,0 +1,54 @@
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  background-color: #f7f7f7;
+  cursor: default;
+}
+footer {
+  border-top: 1px solid #000;
+}
+header {
+  background-color: #ededed;
+}
+.container {
+  margin-bottom: 3rem;
+}
+h1 {
+  margin-bottom: 4rem;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+li {
+  cursor: pointer;
+  display: inline;
+  padding-right: 1.5rem;
+}
+li:hover {
+  text-decoration: underline #000;
+}
+.separator-line {
+  text-align: center;
+  border-top: 1px solid #000;
+  margin-bottom: 5rem;
+}
+.rounded-xl {
+  border-radius: 7%;
+}
+.avatar {
+  border-radius: 50%;
+  border: 0.2rem solid #d3d3d3;
+}
+.social-media-icon {
+  width: 1rem;
+}
+.hobby {
+  margin-bottom: 2rem;
+}
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
