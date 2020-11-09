@@ -1,0 +1,51 @@
+extends ../templates/main.pug
+
+block head
+  title Silviu Iordache - Projects
+
+block content
+  .about-container
+    main.container.mt-4
+      .row.justify-content-center
+        h1 About Me
+      .row
+        .col-8
+          p My name is Silviu Iordache, I was born in Craiova, Romania in 1992
+          p My professional career started in the video game industry, where I worked for almost 6 years as a game designer and content & level creator</p>
+
+          p In 2018, I decided to quit my career in the video game industry and pursue something new. The road led me to web development. For the past year I've been learning web programming and I got hired as a full-stack web programmer at Caphyon, in Craiova.</p>
+        .col-4.d-flex.align-items-center
+          img.rounded-xl.shadow(src="./assets/me.jpg" width="100%")
+        
+    section#hobbies-section.container
+      .row.justify-content-md-center
+        .col-12
+          .separator-line
+
+      .row.justify-content-center
+        h1 Hobbies
+      .row
+        .col-6.col-md-4
+          .hobby.text-center
+            p.emoji 🏋️
+            p Fitness
+        .col-6.col-md-4
+          .hobby.text-center
+            p.emoji 🚴
+            p Cycling
+        .col-6.col-md-4
+          .hobby.text-center
+            p.emoji 📖
+            p Reading
+        .col-6.col-md-4
+          .hobby.text-center
+            p.emoji ⛰️
+            p Nature
+        .col-6.col-md-4
+          .hobby.text-center
+            p.emoji 🧘
+            p Wellness
+        .col-6.col-md-4
+          .hobby.text-center
+            p.emoji 🖥️
+            p Programming

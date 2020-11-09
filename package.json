@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:stylus && npm run build:pug",
-    "build:pug": "pug ssr/pug --out site/",
+    "build:pug": "pug ssr/pug/pages --out site/",
     "build:stylus": "stylus ssr/stylus --out site/css",
     "start": "node server.js"
   },
