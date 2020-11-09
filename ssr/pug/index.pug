@@ -6,6 +6,8 @@ html.h-100
     title Ultra
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
     link(rel="stylesheet" href="./css/style.css")
+    script(src="https://kit.fontawesome.com/3e40f7071c.js" crossorigin="anonymous")
+
   body.h-100.d-flex.flex-column
     header.d-flex.justify-content-between.align-items-center.py-3
       .d-flex.align-items-center.ml-4
@@ -29,9 +31,98 @@ html.h-100
         .col-4.d-flex.align-items-center
           img.rounded-xl.shadow(src="./assets/me.jpg" width="100%")
 
+    section#projects-section.container
+      .row.justify-content-center
+        h1 Projects
+
+      .row.mb-5
+        .col-12
+          h3.mb-0 Bytes Route
+          p.text-muted Caphyon
+        .col-12.col-md-6
+          img.img-fluid(src="/assets/projects/bytes-route.png")
+        .col-12.col-md-6.d-flex.flex-column.justify-content-between
+          p A codeless solution to building onboarding tours on your website.
+          p Tech: Vue.js, Node.js, Bootstrap, Stylus, Pug, Jest, Heroku
+            
+          .links.d-flex.justify-content-start
+             a.btn.btn-outline-primary.link(href="https://bytesroute.com/" target="_blank" rel="noopener" title="See live")
+              i.fas.fa-external-link-alt.mr-1
+              span View
+
+      .row.justify-content-md-center
+        .col-12
+          .separator-line
+
+      .row.mb-5
+        .col-12
+          h3.mb-0 Simon 
+          p.text-muted Personal Project
+        .col-12.col-md-6
+          img.img-fluid(src="/assets/projects/simon.png")
+        .col-12.col-md-6.d-flex.flex-column.justify-content-between
+          .project-info
+            p A clone of the classic memory game, #[a.link(href='https://en.wikipedia.org/wiki/Simon_(game)' target='_blank' rel='noreferrer noopener') Simon].
+            p Concepts: finite state machine, sound objects
+            p Tech: Vanilla JS, CSS & HTML
+          .links.d-flex.justify-content-start
+            a.btn.btn-outline-primary.link(href="https://laughing-dubinsky-d5bafe.netlify.app/" target="_blank" rel="noopener" title="See live")
+              i.fas.fa-external-link-alt.mr-1
+              span View
+            a.btn.btn-outline-primary.link.ml-3(href="https://github.com/SilviuIordache/simon" target="_blank" rel="noopener" title="See live")
+              i.fab.fa-github.mr-1
+              span Code
+      
+      .row.justify-content-md-center
+        .col-12
+          .separator-line
+      
+      .row.mb-5
+        .col-12
+          h3.mb-0 Bike Store (front-end)
+          p.text-muted Personal Project
+        .col-12.col-md-6
+          img.img-fluid(src="/assets/projects/bike-store.png")
+        .col-12.col-md-6.d-flex.flex-column.justify-content-between
+          .project-info
+            p A front-end application for an online bike store built using Vue.js 
+            p Concepts: Front-end architecture using a JavaScript framework: VueJS, image uploading
+            p Tech: Vue.js, Pug, Stylus, 
+          .links.d-flex.justify-content-start
+            a.btn.btn-outline-primary.link(href="https://laughing-dubinsky-d5bafe.netlify.app/" target="_blank" rel="noopener" title="See live")
+              i.fas.fa-external-link-alt.mr-1
+              span View (TBD)
+            a.btn.btn-outline-primary.link.ml-3(href="https://github.com/SilviuIordache/bikestore-fe" target="_blank" rel="noopener" title="See live")
+              i.fab.fa-github.mr-1
+              span Code
+
+        
+      .row.justify-content-md-center
+        .col-12
+          .separator-line
+      
+      .row.mb-5
+        .col-12
+          h3.mb-0 Bike Store (back-end)
+          p.text-muted Personal Project
+        .col-12.col-md-6
+          img.img-fluid(src="/assets/projects/bike-api.png")
+        .col-12.col-md-6.d-flex.flex-column.justify-content-between
+          .project-info
+            p An API for an online bike store, running on NodeJS and Express
+            p Concepts: RESTful API, image uploading
+            p Tech: Node.js, Express
+          .links.d-flex.justify-content-start
+            a.btn.btn-outline-primary.link(href="https://github.com/SilviuIordache/bikestore-be" target="_blank" rel="noopener" title="See live")
+              i.fab.fa-github.mr-1
+              span Code
+
+
+
+
     section#hobbies-section.container
       .row.justify-content-md-center
-        .col-6
+        .col-12
           .separator-line
 
       .row.justify-content-center
@@ -63,16 +154,12 @@ html.h-100
             p Programming
 
 
-    #projects-section.container
-      .row.justify-content-center
-        h1 Projects
-
     footer.container.mt-auto.pt-3.px-0.mb-4.d-flex.justify-content-between
-      p Silviu Iordache © 2020
+      p.text-muted Silviu Iordache © 2020
       ul
         li
-          a(href="")         
-            img(src="./assets/github.svg" class="social-media-icon")
+          a.footer-link(href="https://github.com/SilviuIordache")         
+            i.fab.fa-github.fa-lg
         li
-          a(href="")         
-            img(src="./assets/linedin.svg" class="social-media-icon")
+          a.footer-link(href="https://www.linkedin.com/in/silviu-iordache-36b81785")
+            i.fab.fa-linkedin.fa-lg    
