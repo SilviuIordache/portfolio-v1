@@ -1,5 +1,8 @@
 extends ../templates/main.pug
 
+block append header
+  include ../mixins/project-card.pug
+
 block head
   title Silviu Iordache - Projects
 
@@ -8,102 +11,50 @@ block content
     .row.justify-content-center.mt-5
       h1 Projects
 
-    .row.mb-5
-      .col-12
-        h3.mb-0 Bytes Route
-        p.text-muted Caphyon
-      .col-12.col-md-6
-        img.img-fluid(src="/assets/projects/bytes-route.png")
-      .col-12.col-md-6.d-flex.flex-column.justify-content-between
-        p A codeless solution to building onboarding tours on your website.
-        p Front-end: Vue.js, Bootstrap, Stylus, Pug
-        p Back-end: Node.js, Express, MongoDB, Mongoose
-        p Testing: Jest, Vue-Test-Utils, Mocha, Chai, Nyc
-        p Hosting: Heroku 
-          
-        .links.d-flex.justify-content-start
-          a.btn.btn-outline-primary.link(href="https://bytesroute.com/" target="_blank" rel="noopener" title="See live")
-            i.fas.fa-external-link-alt.mr-1
-            span View
+    +project-card(
+      'Grow Happy',
+      'personal',
+      '2021-07-18',
+      '/assets/projects/grow-happy.png',
+      'A self reflection tool that lets you evaluate key areas of your life, set goals and see how your hapiness growth evolves over time. Hapiness evolution is visualized with charts.',
+      ['Data mapped with Chartjs', 'User system', 'Responsive web application'],
+      ['Vue.js', 'Pug', 'Stylus', 'Bootstrap', 'Google Firestore', 'Chart.js', 'Heroku'],
+      'https://grow-happy.herokuapp.com/',
+      ['https://github.com/SilviuIordache/grow']
+    )
 
-    .row.justify-content-md-center
-      .col-12
-        .separator-line
+    +project-card(
+      'Bytes Route',
+      'Caphyon',
+      '2020-09-10',
+      '/assets/projects/bytes-route.png',
+      'A solution for building and deploying product tours without code for websites and web-applications. Consists of a Vue.js dashboard, a Chrome extension used as the tour builder, a script for integrating with your website, a Node.js backend and a presentation website',
+      ['Large-scale Vue.js app','User-generated content', 'Onboarding experience', 'User auth system', 'Codeless Product Tour SaaS', 'Team management system', 'Theme style editing', 'Unit tests'],
+      ['Vue.js', 'Bootstrap', 'Stylus', 'Pug', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'Vue-Test-Utils', 'Mocha & Chai', 'Heroku'],
+      'https://www.bytesroute.com/',
+      ''
+    )
 
-    .row.mb-5
-      .col-12
-        h3.mb-0 Simon 
-        p.text-muted Personal Project
-      .col-12.col-md-6
-        img.img-fluid(src="/assets/projects/simon.png")
-      .col-12.col-md-6.d-flex.flex-column.justify-content-between
-        .project-info
-          p A clone of the classic memory game, #[a.link(href='https://en.wikipedia.org/wiki/Simon_(game)' target='_blank' rel='noreferrer noopener') Simon].
-          p Concepts
-          ul
-            li SOLID architecture
-            li finite state machine
-            li sound objects manipulation
-          p Tech: Vanilla JS, CSS & HTML
-          p Hosting: Netlify
-        .links.d-flex.justify-content-start
-          a.btn.btn-outline-primary.link(href="https://laughing-dubinsky-d5bafe.netlify.app/" target="_blank" rel="noopener" title="See live")
-            i.fas.fa-external-link-alt.mr-1
-            span View
-          a.btn.btn-outline-primary.link.ml-3(href="https://github.com/SilviuIordache/simon" target="_blank" rel="noopener" title="See repository")
-            i.fab.fa-github.mr-1
-            span Code
-    
-    .row.justify-content-md-center
-      .col-12
-        .separator-line
-    
-    .row.mb-5
-      .col-12
-        h3.mb-0 Bike Store (front-end)
-        p.text-muted Personal Project
-      .col-12.col-md-6
-        img.img-fluid(src="/assets/projects/bike-store.png")
-      .col-12.col-md-6.d-flex.flex-column.justify-content-between
-        .project-info
-          p A single page application for an online bike store built using Vue.js 
-          p Features
-          ul
-            li front-end architecture using a JavaScript framework
-            li uploading images in a form and showing previews
-            li responsive web-design
-            li shopping cart implementation
-          p Tech: Vue.js, Pug, Stylus, Bootstrap
-          p Hosting: Heroku
-        .links.d-flex.justify-content-start
-          a.btn.btn-outline-primary.link(href="https://bikestore-fe.herokuapp.com/" target="_blank" rel="noopener" title="See live")
-            i.fas.fa-external-link-alt.mr-1
-            span View
-          a.btn.btn-outline-primary.link.ml-3(href="https://github.com/SilviuIordache/bikestore-fe" target="_blank" rel="noopener" title="See repository")
-            i.fab.fa-github.mr-1
-            span Code
+    +project-card(
+      'Simon game',
+      'personal',
+      '2020-06-20',
+      '/assets/projects/simon.png',
+      'A clone of the classic memory game Simon. The game consist of multiple succesive rounds. Each round you will have to memorize a sequence colors. After the memorization phase, you will enter the guessing phase where you will have to replicate the sequence. The game starts easy with just a short sequence, but gradually gets harder as you progress, each round adding 1 more color to remember.',
+      ['SOLID architecture', 'finite state machine', 'sound object manipulations'],
+      ['Vanilla JS', 'CSS', 'HTML', 'Netlify'],
+      'https://laughing-dubinsky-d5bafe.netlify.app/',
+      ['https://github.com/SilviuIordache/simon']
+    )
 
-      
-    .row.justify-content-md-center
-      .col-12
-        .separator-line
-    
-    .row.mb-5
-      .col-12
-        h3.mb-0 Bike Store (back-end)
-        p.text-muted Personal Project
-      .col-12.col-md-6
-        img.img-fluid(src="/assets/projects/bike-api.png")
-      .col-12.col-md-6.d-flex.flex-column.justify-content-between
-        .project-info
-          p An API for an online bike store, running on NodeJS and Express
-          p Concepts
-          ul
-            li implementation of a RESTful API
-            li saving images in a cloud-based image hosting service
-          p Tech: Node.js, Express, MongoDB & Mongoose
-          p Hosting: Heroku, Cloudinary
-        .links.d-flex.justify-content-start
-          a.btn.btn-outline-primary.link(href="https://github.com/SilviuIordache/bikestore-be" target="_blank" rel="noopener" title="See repository")
-            i.fab.fa-github.mr-1
-            span Code
+    +project-card(
+      'Bike Store',
+      'personal',
+      '2020-04-17',
+      '/assets/projects/bike-store.png',
+      'Full-stack application: An online bike store that lets admins upload new product to the store. Functionality for a shopping cart is also implemented',
+      ['Image upload in forms with preview and size validations', 'Responsive web-design', 'Shopping cart implementation', ' RESTful API implementation','image hosting in a cloud-based service (Cloudinary)'],
+      ['Vue.js', 'Pug', 'Stylus', 'Bootstrap', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Heroku', 'Cloudinary'],
+      'https://bikestore-fe.herokuapp.com/',
+      ['https://github.com/SilviuIordache/bikestore-fe', 'https://github.com/SilviuIordache/bikestore-be']
+    )
