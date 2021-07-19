@@ -61,3 +61,33 @@ h1 {
 .footer-link {
   color: #808080;
 }
+.project-card {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.project-card-interactive {
+  transition: all 0.2s ease-in-out;
+}
+.project-card-interactive:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.project-card-interactive:active {
+  background-color: #f5f5f5;
+  transform: scale(0.95);
+}
+.project-image {
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(50%);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.project-image:hover {
+  cursor: pointer;
+  filter: none;
+  transform: scale(1.1);
+}
+.project-link {
+  font-size: 1.5rem;
+  color: #808080;
+}
