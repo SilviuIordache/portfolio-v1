@@ -49,6 +49,7 @@ h1
   width 1rem
   color light-gray
 
+// ---- about section
 .hobby
  margin-bottom 2rem
 
@@ -56,9 +57,7 @@ h1
   font-size 2rem
   margin-bottom 0
 
-
-.project-link-icon
-  width 1.5rem
+// ----- Generic
 
 .footer-link
   color gray
@@ -77,8 +76,9 @@ h1
       transform: scale(0.95);
 
 .project-image
+  border-radius 1rem
   transition: all .4s ease-in-out
-  filter: grayscale(50%)
+  filter opacity(70%)
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   &:hover
     cursor pointer
@@ -88,3 +88,10 @@ h1
 .project-link
   font-size 1.5rem
   color gray
+
+.tech-item
+  border 1px solid lightgray
+  border-radius 2rem
+  padding 0.2rem 0.5rem
+  color gray
+  display inline-block
